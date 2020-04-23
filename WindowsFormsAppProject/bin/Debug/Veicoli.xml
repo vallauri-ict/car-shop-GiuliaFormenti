@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVeicolo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Veicolo xsi:type="Moto">
+    <Marca>DUCATI</Marca>
+    <Modello>Hypermotard</Modello>
+    <Colore>Rosso</Colore>
+    <Cilindrata>1000</Cilindrata>
+    <PotenzaKw>75.2</PotenzaKw>
+    <Immatricolazione>2020-01-10T08:27:49.4676572+01:00</Immatricolazione>
+    <IsUsato>false</IsUsato>
+    <IsKmZero>false</IsKmZero>
+    <KmPercorsi>0</KmPercorsi>
+    <MarcaSella>Cavallino</MarcaSella>
+  </Veicolo>
+  <Veicolo xsi:type="Moto">
+    <Marca>HONDA</Marca>
+    <Modello>Dominator</Modello>
+    <Colore>Nero</Colore>
+    <Cilindrata>1000</Cilindrata>
+    <PotenzaKw>120</PotenzaKw>
+    <Immatricolazione>2020-01-10T08:27:49.4796503+01:00</Immatricolazione>
+    <IsUsato>false</IsUsato>
+    <IsKmZero>false</IsKmZero>
+    <KmPercorsi>0</KmPercorsi>
+    <MarcaSella>Quintino</MarcaSella>
+  </Veicolo>
+  <Veicolo xsi:type="Auto">
+    <Marca>JEEP</Marca>
+    <Modello>Compass</Modello>
+    <Colore>Blu</Colore>
+    <Cilindrata>1000</Cilindrata>
+    <PotenzaKw>32</PotenzaKw>
+    <Immatricolazione>2020-01-10T08:27:49.4796503+01:00</Immatricolazione>
+    <IsUsato>false</IsUsato>
+    <IsKmZero>false</IsKmZero>
+    <KmPercorsi>0</KmPercorsi>
+    <NumAirbag>8</NumAirbag>
+  </Veicolo>
+  <Veicolo xsi:type="Moto">
+    <Marca>FILENAME</Marca>
+    <Modello>fileName</Modello>
+    <Colore>Rosso</Colore>
+    <Cilindrata>50</Cilindrata>
+    <PotenzaKw>0</PotenzaKw>
+    <Immatricolazione>2020-01-10T08:27:53.5088529+01:00</Immatricolazione>
+    <IsUsato>false</IsUsato>
+    <IsKmZero>false</IsKmZero>
+    <KmPercorsi>0</KmPercorsi>
+    <MarcaSella>fileName</MarcaSella>
+  </Veicolo>
+</ArrayOfVeicolo>

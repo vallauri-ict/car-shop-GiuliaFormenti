@@ -1,0 +1,34 @@
+﻿*{
+    font-family: 'Arial Nova';
+}
+body{
+    background-color: darkslategrey;
+}
+h2, h4{
+    text-align: center;
+}
+img{
+    width: 180px;
+    height: 180px;
+}
+p{
+    color: lightgray;
+}
+.veicolo{
+    display: inline-block;
+    width: 180px;
+    margin: 5px;
+}
+.titolo{
+    font-size: 14pt;
+}
+.didascalia{
+    font-size: 11pt;
+}
+.newImg{
+    width: 500px;
+    height: 500px;
+}
+.descrizione{
+    font-size: 16pt;
+}

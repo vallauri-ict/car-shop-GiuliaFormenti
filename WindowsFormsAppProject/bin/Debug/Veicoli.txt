@@ -1,0 +1,4 @@
+Moto: | DUCATI | Hypermotard | Rosso | 1000 | 75,2 | 13/12/2019 08:33:55 | False | False | 0 | Cavallino
+Moto: | HONDA | Domi<3 | Nero | 1000 | 120 | 13/12/2019 08:33:56 | False | False | 0 | Quintino
+Auto: | JEEP | Compass | Blu | 1000 | 32 | 13/12/2019 08:33:56 | False | False | 0 | 8
+Moto: | PROVA | PROVA | Rosso | 50 | 0 | 13/12/2019 08:34:01 | False | False | 0 | PROVA

@@ -1,0 +1,50 @@
+[
+  {
+    "MarcaSella": "Cavallino",
+    "Marca": "DUCATI",
+    "Modello": "Hypermotard",
+    "Colore": "Rosso",
+    "Cilindrata": 1000,
+    "PotenzaKw": 75.2,
+    "Immatricolazione": "2020-01-10T08:27:49.4676572+01:00",
+    "IsUsato": false,
+    "IsKmZero": false,
+    "KmPercorsi": 0
+  },
+  {
+    "MarcaSella": "Quintino",
+    "Marca": "HONDA",
+    "Modello": "Dominator",
+    "Colore": "Nero",
+    "Cilindrata": 1000,
+    "PotenzaKw": 120.0,
+    "Immatricolazione": "2020-01-10T08:27:49.4796503+01:00",
+    "IsUsato": false,
+    "IsKmZero": false,
+    "KmPercorsi": 0
+  },
+  {
+    "NumAirbag": 8,
+    "Marca": "JEEP",
+    "Modello": "Compass",
+    "Colore": "Blu",
+    "Cilindrata": 1000,
+    "PotenzaKw": 32.0,
+    "Immatricolazione": "2020-01-10T08:27:49.4796503+01:00",
+    "IsUsato": false,
+    "IsKmZero": false,
+    "KmPercorsi": 0
+  },
+  {
+    "MarcaSella": "fileName",
+    "Marca": "FILENAME",
+    "Modello": "fileName",
+    "Colore": "Rosso",
+    "Cilindrata": 50,
+    "PotenzaKw": 0.0,
+    "Immatricolazione": "2020-01-10T08:27:53.5088529+01:00",
+    "IsUsato": false,
+    "IsKmZero": false,
+    "KmPercorsi": 0
+  }
+]
