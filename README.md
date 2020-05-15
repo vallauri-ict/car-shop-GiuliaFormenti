@@ -26,18 +26,28 @@ Presenta un menù con diverse voci:
             Console.WriteLine("5 - CLEAR CONSOLE");
             Console.WriteLine("\nX - FINE\n\n");
         }
-    ```
+ ```
 
 E' presente il sottoprogramma **DropTable(string name)**, per la rimozione di una tabella, qui presente in modo da non poter essere direttamente richiamato dall'utente.
-private static void DropTable(string name)
-
+ ```csharp
+    private static void DropTable(string name)
+ ```
+ 
 Intoltre vi è il sottoprogramma **setParameters()** che permette di inserire i vari parametri aggiungendo valori di default in presenza di errori.
+```csharp
+    public static void setParameters()
+ ```
 
 # DatabaseInstructionDLL
 E' una DLL che contiene la classe **UtilsDatabase.cs**, dove sono presenti i vari sottoprogrammi per gestire il database:
 - **CreateTableCars(string name = "cars")** per creare la tabella
 - **AddNewCar(string type, string brand, string modello, string colore, int cilindrata, double potenza, DateTime immatricolazine, bool usato, bool kmZero, int kmPercorsi, double prezzo, string marcaSella, int numAirbag, string name = "cars")** che aggiunge un nuovo veicolo al database
 - **DeleteElement(string name, int id)** per eliminare un record del database dato l'id
+```csharp
+    public static void CreateTableCars(string name = "cars")
+    public static void AddNewCar(string type, string brand, string modello, string colore, int cilindrata, double potenza, DateTime immatricolazine, bool usato, bool kmZero, int kmPercorsi, double prezzo, string marcaSella, int numAirbag, string name = "cars")
+    public static void DeleteElement(string name, int id)
+ ```
 
 # VenditaVeicoliDLLProject
 E' una DLL che contiene diverse classi:
