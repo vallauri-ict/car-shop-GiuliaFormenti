@@ -42,13 +42,15 @@ namespace WindowsFormsAppProject
             {
                 VenditaVeicoliDLLProject.Moto m = new VenditaVeicoliDLLProject.Moto(txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToInt32(nmrPotenza.Value), dtpImmatricolazione.Value, rdbNo.Checked? false : true, rdbNoZ.Checked? false : true, Convert.ToInt32(nmrKmPercorsi.Value), txtMarcaSella.Text);
                 bindingListaVeicoli.Add(m);
-                UtilsDatabase.AddNewCar("Moto", txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToInt32(nmrPotenza.Value), dtpImmatricolazione.Value, rdbNo.Checked? false : true, rdbNoZ.Checked? false : true, Convert.ToInt32(nmrKmPercorsi.Value), Convert.ToInt32(nmrPrezzo), txtMarcaSella.Text);
+                UtilsDatabase.AddNewCar("Moto", txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToInt32(nmrPotenza.Value), dtpImmatricolazione.Value, rdbNo.Checked ? false : true, rdbNoZ.Checked ? false : true, Convert.ToInt32(nmrKmPercorsi.Value), Convert.ToInt32(nmrPrezzo), txtMarcaSella.Text, 0);
+                //UtilsDatabase.AddNewItem("Moto", txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToDouble(nmrPotenza.Value), Convert.ToDateTime(dtpImmatricolazione.Value), rdbNo.Checked?false:true, rdbNoZ.Checked?false:true, Convert.ToInt32(nmrKmPercorsi), Convert.ToDouble(nmrPrezzo), Convert.ToInt32(nmrNumAirbag), txtMarcaSella.Text);
             }
             else
             {
                 VenditaVeicoliDLLProject.Auto a = new VenditaVeicoliDLLProject.Auto(txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToInt32(nmrPotenza.Value), dtpImmatricolazione.Value, rdbNo.Checked ? false : true, rdbNoZ.Checked ? true : false, Convert.ToInt32(nmrKmPercorsi.Value), Convert.ToInt32(nmrNumAirbag.Value));
                 bindingListaVeicoli.Add(a);
-                UtilsDatabase.AddNewCar("Moto", txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToInt32(nmrPotenza.Value), dtpImmatricolazione.Value, rdbNo.Checked ? false : true, rdbNoZ.Checked ? false : true, Convert.ToInt32(nmrKmPercorsi.Value), Convert.ToInt32(nmrPrezzo), nmrNumAirbag.Value.ToString());
+                UtilsDatabase.AddNewCar("Auto", txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToInt32(nmrPotenza.Value), dtpImmatricolazione.Value, rdbNo.Checked ? false : true, rdbNoZ.Checked ? false : true, Convert.ToInt32(nmrKmPercorsi.Value), Convert.ToInt32(nmrPrezzo), "", Convert.ToInt32(nmrNumAirbag.Value));
+                //UtilsDatabase.AddNewItem("Auto", txtMarca.Text, txtModello.Text, cmbColore.SelectedItem.ToString(), Convert.ToInt32(nmrCilindrata.Value), Convert.ToDouble(nmrPotenza.Value), Convert.ToDateTime(dtpImmatricolazione.Value), rdbNo.Checked ? false : true, rdbNoZ.Checked ? false : true, Convert.ToInt32(nmrKmPercorsi), Convert.ToDouble(nmrPrezzo), Convert.ToInt32(nmrNumAirbag), txtMarcaSella.Text);
             }
 
 

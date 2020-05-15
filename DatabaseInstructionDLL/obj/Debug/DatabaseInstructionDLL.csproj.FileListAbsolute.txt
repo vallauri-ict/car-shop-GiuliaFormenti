@@ -15,3 +15,11 @@ C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti
 C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti-master\DatabaseInstructionDLL\obj\Debug\DatabaseInstructionDLL.csproj.CopyComplete
 C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti-master\DatabaseInstructionDLL\obj\Debug\DatabaseInstructionDLL.dll
 C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti-master\DatabaseInstructionDLL\obj\Debug\DatabaseInstructionDLL.pdb
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\bin\Debug\DatabaseInstructionDLL.dll
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\bin\Debug\DatabaseInstructionDLL.pdb
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\bin\Debug\System.Data.OleDb.dll
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\bin\Debug\System.Data.OleDb.xml
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\obj\Debug\DatabaseInstructionDLL.csprojAssemblyReference.cache
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\obj\Debug\DatabaseInstructionDLL.csproj.CopyComplete
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\obj\Debug\DatabaseInstructionDLL.dll
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\DatabaseInstructionDLL\obj\Debug\DatabaseInstructionDLL.pdb

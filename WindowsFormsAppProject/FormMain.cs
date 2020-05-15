@@ -37,14 +37,22 @@ namespace WindowsFormsAppProject
 
             UtilsDatabase u = new UtilsDatabase(connStr);
             //u.CreateTableCars();
+            //UtilsDatabase.CreateTable("Auto");
+            //UtilsDatabase.CreateTable("Moto");
+            //UtilsDatabase.CreateTableCars("Moto");
+            //UtilsDatabase.CreateTableCars("Auto");
+            UtilsDatabase.CreateTableCars("cars");
             Moto m = new Moto();
             bindingListVeicoli.Add(m);
             m = new Moto("Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, "Quintino");
             bindingListVeicoli.Add(m);
-            UtilsDatabase.AddNewCar("Moto", "Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, 12000, "Quintino");
+            UtilsDatabase.AddNewCar("Moto", "Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, 12000, "Quintino", 0);
+            //UtilsDatabase.AddNewItem("Moto", "Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, 12000, 0, "Quintino");
             Auto a = new Auto("Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 8);
             bindingListVeicoli.Add(a);
-            UtilsDatabase.AddNewCar("Auto", "Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 32500, "8");
+            UtilsDatabase.AddNewCar("Auto", "Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 32500, "", 8);
+            //UtilsDatabase.AddNewItem("Auto", "Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 32500, /*"",*/ 8, "");
+
         }
 
         private void nuovoToolStripButton_Click(object sender, EventArgs e)

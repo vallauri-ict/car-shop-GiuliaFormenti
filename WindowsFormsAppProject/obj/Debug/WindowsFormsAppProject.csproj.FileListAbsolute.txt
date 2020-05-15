@@ -115,3 +115,25 @@ C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti
 C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti-master\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.csproj.CopyComplete
 C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti-master\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.exe
 C:\Users\Giulia\Downloads\car-shop-GiuliaFormenti-master\car-shop-GiuliaFormenti-master\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.pdb
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.csprojAssemblyReference.cache
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.FormDialogAggiungiVeicolo.resources
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.FormMain.resources
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.Properties.Resources.resources
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.csproj.GenerateResource.cache
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.exe
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.pdb
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\www\css\normalize.css
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\www\css\style.css
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\www\index - skeleton.html
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\www\js\script.js
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\www\NuovaPagina.html
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\WindowsFormsAppProject.exe.config
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\WindowsFormsAppProject.exe
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\WindowsFormsAppProject.pdb
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\DatabaseInstructionDLL.dll
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\VenditaVeicoliDLLProject.dll
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\DatabaseInstructionDLL.pdb
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\VenditaVeicoliDLLProject.pdb
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Giulia\Desktop\info\ultimo\VenditaVeicoli\WindowsFormsAppProject\obj\Debug\WindowsFormsAppProject.csproj.CopyComplete
