@@ -2,6 +2,7 @@
 using System.IO;
 using VenditaVeicoliDLLProject;
 using DatabaseInstructionDLL;
+using System.Data.OleDb;
 
 namespace ConsoleAppProject
 {
@@ -95,7 +96,7 @@ namespace ConsoleAppProject
                         }
                         break;
                     case '4':
-                        UtilsDatabase.DropTable("cars");
+                        DropTable("cars");
                         break;
                     case '5':
                         Console.Clear();
@@ -261,6 +262,24 @@ namespace ConsoleAppProject
                     numAirbag = Convert.ToInt32(aus);
                 }
                 marcaSella = "/";
+            }
+        }
+
+        private static void DropTable(string name)
+        {
+            if (connStr != null)
+            {
+                OleDbConnection con = new OleDbConnection(connStr);
+                using (con)
+                {
+                    UtilsDatabase.first = true;
+                    con.Open();
+                    OleDbCommand cmd = new OleDbCommand();
+                    cmd.Connection = con;
+                    string command = $"DROP TABLE {name}";
+                    cmd.CommandText = command;
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
     }

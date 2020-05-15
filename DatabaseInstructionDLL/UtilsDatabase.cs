@@ -252,23 +252,7 @@ namespace DatabaseInstructionDLL
                 }
             }
         }
-        public static void DropTable(string name)
-        {
-            if (connStr != null)
-            {
-                OleDbConnection con = new OleDbConnection(connStr);
-                using (con)
-                {
-                    first = true;
-                    con.Open();
-                    OleDbCommand cmd = new OleDbCommand();
-                    cmd.Connection = con;
-                    string command = $"DROP TABLE {name}";
-                    cmd.CommandText = command;
-                    cmd.ExecuteNonQuery();
-                }
-            }
-        }
+        
 
         public static void DeleteElement(string name, int id)
         {

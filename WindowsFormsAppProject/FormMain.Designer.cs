@@ -37,6 +37,8 @@
             this.stampaToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.wordToolStripMenu = new System.Windows.Forms.ToolStripButton();
+            this.excelToolStripMenu = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             this.listBoxVeicoli.FormattingEnabled = true;
             this.listBoxVeicoli.ItemHeight = 16;
             this.listBoxVeicoli.Location = new System.Drawing.Point(0, 27);
-            this.listBoxVeicoli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxVeicoli.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxVeicoli.Name = "listBoxVeicoli";
             this.listBoxVeicoli.Size = new System.Drawing.Size(779, 417);
             this.listBoxVeicoli.TabIndex = 0;
@@ -60,7 +62,9 @@
             this.salvaToolStripButton,
             this.stampaToolStripButton,
             this.toolStripSeparator,
-            this.toolStripSeparator1});
+            this.toolStripSeparator1,
+            this.wordToolStripMenu,
+            this.excelToolStripMenu});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(779, 27);
@@ -117,6 +121,25 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
+            // wordToolStripMenu
+            // 
+            this.wordToolStripMenu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.wordToolStripMenu.Image = ((System.Drawing.Image)(resources.GetObject("wordToolStripMenu.Image")));
+            this.wordToolStripMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.wordToolStripMenu.Name = "wordToolStripMenu";
+            this.wordToolStripMenu.Size = new System.Drawing.Size(29, 24);
+            this.wordToolStripMenu.Text = "toolStripButton1";
+            this.wordToolStripMenu.Click += new System.EventHandler(this.wordToolStripMenu_Click);
+            // 
+            // excelToolStripMenu
+            // 
+            this.excelToolStripMenu.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.excelToolStripMenu.Image = ((System.Drawing.Image)(resources.GetObject("excelToolStripMenu.Image")));
+            this.excelToolStripMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.excelToolStripMenu.Name = "excelToolStripMenu";
+            this.excelToolStripMenu.Size = new System.Drawing.Size(29, 24);
+            this.excelToolStripMenu.Text = "toolStripButton2";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,7 +147,7 @@
             this.ClientSize = new System.Drawing.Size(779, 444);
             this.Controls.Add(this.listBoxVeicoli);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "SALONE VENDITA VEICOLI NOVI E USATI";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
@@ -146,6 +169,8 @@
         private System.Windows.Forms.ToolStripButton stampaToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton wordToolStripMenu;
+        private System.Windows.Forms.ToolStripButton excelToolStripMenu;
     }
 }
 
