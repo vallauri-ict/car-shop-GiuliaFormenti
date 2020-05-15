@@ -178,7 +178,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 305);
+            this.label8.Location = new System.Drawing.Point(16, 307);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 17);
@@ -188,7 +188,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 340);
+            this.label9.Location = new System.Drawing.Point(16, 346);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 17);
@@ -198,7 +198,7 @@
             // lblMarcaSella
             // 
             this.lblMarcaSella.AutoSize = true;
-            this.lblMarcaSella.Location = new System.Drawing.Point(16, 378);
+            this.lblMarcaSella.Location = new System.Drawing.Point(16, 418);
             this.lblMarcaSella.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMarcaSella.Name = "lblMarcaSella";
             this.lblMarcaSella.Size = new System.Drawing.Size(103, 17);
@@ -208,7 +208,7 @@
             // lblNumeroAir
             // 
             this.lblNumeroAir.AutoSize = true;
-            this.lblNumeroAir.Location = new System.Drawing.Point(16, 411);
+            this.lblNumeroAir.Location = new System.Drawing.Point(16, 451);
             this.lblNumeroAir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumeroAir.Name = "lblNumeroAir";
             this.lblNumeroAir.Size = new System.Drawing.Size(124, 17);
@@ -233,7 +233,7 @@
             // 
             // txtMarcaSella
             // 
-            this.txtMarcaSella.Location = new System.Drawing.Point(176, 374);
+            this.txtMarcaSella.Location = new System.Drawing.Point(176, 414);
             this.txtMarcaSella.Margin = new System.Windows.Forms.Padding(4);
             this.txtMarcaSella.Name = "txtMarcaSella";
             this.txtMarcaSella.Size = new System.Drawing.Size(132, 22);
@@ -264,7 +264,7 @@
             // 
             // nmrNumAirbag
             // 
-            this.nmrNumAirbag.Location = new System.Drawing.Point(176, 409);
+            this.nmrNumAirbag.Location = new System.Drawing.Point(176, 449);
             this.nmrNumAirbag.Margin = new System.Windows.Forms.Padding(4);
             this.nmrNumAirbag.Maximum = new decimal(new int[] {
             10,
@@ -287,7 +287,7 @@
             // 
             // nmrKmPercorsi
             // 
-            this.nmrKmPercorsi.Location = new System.Drawing.Point(176, 337);
+            this.nmrKmPercorsi.Location = new System.Drawing.Point(176, 343);
             this.nmrKmPercorsi.Margin = new System.Windows.Forms.Padding(4);
             this.nmrKmPercorsi.Name = "nmrKmPercorsi";
             this.nmrKmPercorsi.Size = new System.Drawing.Size(133, 22);
@@ -367,7 +367,7 @@
             // 
             // nmrPrezzo
             // 
-            this.nmrPrezzo.Location = new System.Drawing.Point(177, 445);
+            this.nmrPrezzo.Location = new System.Drawing.Point(177, 380);
             this.nmrPrezzo.Margin = new System.Windows.Forms.Padding(4);
             this.nmrPrezzo.Maximum = new decimal(new int[] {
             10,
@@ -391,7 +391,7 @@
             // lblPrezzo
             // 
             this.lblPrezzo.AutoSize = true;
-            this.lblPrezzo.Location = new System.Drawing.Point(17, 447);
+            this.lblPrezzo.Location = new System.Drawing.Point(17, 382);
             this.lblPrezzo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrezzo.Name = "lblPrezzo";
             this.lblPrezzo.Size = new System.Drawing.Size(65, 17);
@@ -402,7 +402,7 @@
             // 
             this.groupBox2.Controls.Add(this.rdbNoZ);
             this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Location = new System.Drawing.Point(175, 286);
+            this.groupBox2.Location = new System.Drawing.Point(175, 288);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
