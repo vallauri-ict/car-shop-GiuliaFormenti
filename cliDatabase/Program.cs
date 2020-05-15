@@ -53,11 +53,11 @@ namespace ConsoleAppProject
                         setParameters();
                         if (veicolo == "Moto")
                         {
-                            UtilsDatabase.AddNewCar("cars", veicolo, marca, modello, colore, cilindrata, potenza, immatricolazione, usata, kmZero, kmPercorsi, prezzo, marcaSella);
+                            UtilsDatabase.AddNewCar(veicolo, marca, modello, colore, cilindrata, potenza, immatricolazione, usata, kmZero, kmPercorsi, prezzo, marcaSella, 0);
                         }
                         else
                         {
-                            UtilsDatabase.AddNewCar("cars", veicolo, marca, modello, colore, cilindrata, potenza, immatricolazione, usata, kmZero, kmPercorsi, prezzo, numAirbag.ToString());
+                            UtilsDatabase.AddNewCar(veicolo, marca, modello, colore, cilindrata, potenza, immatricolazione, usata, kmZero, kmPercorsi, prezzo, "", numAirbag);
 
                         }
                         break;
