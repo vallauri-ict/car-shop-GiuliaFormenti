@@ -298,11 +298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\INFORMATICA\\VenditaVeicoliSolution\\VenditaVeicoliDLLProject\\VenditaVeicoliDLLProject.csproj",
+      "projectUniqueName": "C:\\Users\\Giulia\\Downloads\\car-shop-GiuliaFormenti-master\\VenditaVeicoli\\VenditaVeicoliDLLProject\\VenditaVeicoliDLLProject.csproj",
       "projectName": "VenditaVeicoliDLLProject",
-      "projectPath": "G:\\INFORMATICA\\VenditaVeicoliSolution\\VenditaVeicoliDLLProject\\VenditaVeicoliDLLProject.csproj",
+      "projectPath": "C:\\Users\\Giulia\\Downloads\\car-shop-GiuliaFormenti-master\\VenditaVeicoli\\VenditaVeicoliDLLProject\\VenditaVeicoliDLLProject.csproj",
       "packagesPath": "C:\\Users\\Giulia\\.nuget\\packages\\",
-      "outputPath": "G:\\INFORMATICA\\VenditaVeicoliSolution\\VenditaVeicoliDLLProject\\obj\\",
+      "outputPath": "C:\\Users\\Giulia\\Downloads\\car-shop-GiuliaFormenti-master\\VenditaVeicoli\\VenditaVeicoliDLLProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Giulia\\AppData\\Roaming\\NuGet\\NuGet.Config",

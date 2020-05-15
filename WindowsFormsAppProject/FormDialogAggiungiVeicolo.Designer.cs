@@ -50,19 +50,22 @@
             this.nmrKmPercorsi = new System.Windows.Forms.NumericUpDown();
             this.nmrPotenza = new System.Windows.Forms.NumericUpDown();
             this.dtpImmatricolazione = new System.Windows.Forms.DateTimePicker();
-            this.cmbKmZero = new System.Windows.Forms.ComboBox();
             this.cmbColore = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbNo = new System.Windows.Forms.RadioButton();
             this.rdbSi = new System.Windows.Forms.RadioButton();
             this.nmrPrezzo = new System.Windows.Forms.NumericUpDown();
             this.lblPrezzo = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdbNoZ = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.nmrCilindrata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrNumAirbag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrKmPercorsi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrPotenza)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrPrezzo)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbTipoVeicolo
@@ -307,19 +310,6 @@
             this.dtpImmatricolazione.Size = new System.Drawing.Size(132, 22);
             this.dtpImmatricolazione.TabIndex = 29;
             // 
-            // cmbKmZero
-            // 
-            this.cmbKmZero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbKmZero.FormattingEnabled = true;
-            this.cmbKmZero.Items.AddRange(new object[] {
-            "Si",
-            "No"});
-            this.cmbKmZero.Location = new System.Drawing.Point(176, 302);
-            this.cmbKmZero.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbKmZero.Name = "cmbKmZero";
-            this.cmbKmZero.Size = new System.Drawing.Size(132, 24);
-            this.cmbKmZero.TabIndex = 30;
-            // 
             // cmbColore
             // 
             this.cmbColore.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -408,17 +398,53 @@
             this.lblPrezzo.TabIndex = 33;
             this.lblPrezzo.Text = "PREZZO";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rdbNoZ);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Location = new System.Drawing.Point(175, 286);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(133, 43);
+            this.groupBox2.TabIndex = 35;
+            this.groupBox2.TabStop = false;
+            // 
+            // rdbNoZ
+            // 
+            this.rdbNoZ.AutoSize = true;
+            this.rdbNoZ.Checked = true;
+            this.rdbNoZ.Location = new System.Drawing.Point(71, 20);
+            this.rdbNoZ.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbNoZ.Name = "rdbNoZ";
+            this.rdbNoZ.Size = new System.Drawing.Size(47, 21);
+            this.rdbNoZ.TabIndex = 1;
+            this.rdbNoZ.TabStop = true;
+            this.rdbNoZ.Text = "No";
+            this.rdbNoZ.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(4, 20);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(41, 21);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.Text = "Sì";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // FormDialogAggiungiVeicolo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnAnnulla;
             this.ClientSize = new System.Drawing.Size(379, 541);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.nmrPrezzo);
             this.Controls.Add(this.lblPrezzo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmbColore);
-            this.Controls.Add(this.cmbKmZero);
             this.Controls.Add(this.dtpImmatricolazione);
             this.Controls.Add(this.nmrPotenza);
             this.Controls.Add(this.nmrKmPercorsi);
@@ -453,6 +479,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrPrezzo)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,12 +510,14 @@
         private System.Windows.Forms.NumericUpDown nmrKmPercorsi;
         private System.Windows.Forms.NumericUpDown nmrPotenza;
         private System.Windows.Forms.DateTimePicker dtpImmatricolazione;
-        private System.Windows.Forms.ComboBox cmbKmZero;
         private System.Windows.Forms.ComboBox cmbColore;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdbNo;
         private System.Windows.Forms.RadioButton rdbSi;
         private System.Windows.Forms.NumericUpDown nmrPrezzo;
         private System.Windows.Forms.Label lblPrezzo;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rdbNoZ;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }

@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using VenditaVeicoliDLLProject;
 using System.IO;
-using DatabaseDLL;
+using DatabaseInstructionDLL;
 
 namespace WindowsFormsAppProject
 {
     public partial class FormMain : Form
     {
+        private static string resourcesDirectoryPath = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName}\\resources";//Percorso della cartella "resources".
+        private static string DbPath = Path.Combine(resourcesDirectoryPath, "CarShop.accdb");//Percorso del file contenente il database.
+        private static string connStr = $"Provider=Microsoft.Ace.Oledb.12.0; Data Source={DbPath};";//Stringa di connessione completa al database access.
         SerializableBindingList<Veicolo> bindingListVeicoli;
 
         public FormMain()
@@ -31,15 +34,17 @@ namespace WindowsFormsAppProject
 
         private void caricaDatiDiTest()
         {
-            UtilsDatabase.CreateTableCars();
+
+            UtilsDatabase u = new UtilsDatabase(connStr);
+            //u.CreateTableCars();
             Moto m = new Moto();
             bindingListVeicoli.Add(m);
             m = new Moto("Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, "Quintino");
             bindingListVeicoli.Add(m);
-            UtilsDatabase.AddNewCar("Moto", "Honda", 12000);
+            UtilsDatabase.AddNewCar("Moto", "Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, 12000, "Quintino");
             Auto a = new Auto("Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 8);
             bindingListVeicoli.Add(a);
-            UtilsDatabase.AddNewCar("Auto", "Jeep", 32500);
+            UtilsDatabase.AddNewCar("Auto", "Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 32500, "8");
         }
 
         private void nuovoToolStripButton_Click(object sender, EventArgs e)

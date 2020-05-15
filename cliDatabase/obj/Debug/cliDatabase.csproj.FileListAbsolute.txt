@@ -1,0 +1,14 @@
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\bin\Debug\cliDatabase.exe.config
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\bin\Debug\cliDatabase.exe
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\bin\Debug\cliDatabase.pdb
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\bin\Debug\DatabaseInstructionDLL.dll
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\bin\Debug\VenditaVeicoliDLLProject.dll
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\bin\Debug\DatabaseInstructionDLL.pdb
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\bin\Debug\VenditaVeicoliDLLProject.pdb
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\obj\Debug\cliDatabase.csprojAssemblyReference.cache
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\obj\Debug\cliDatabase.Properties.Resources.resources
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\obj\Debug\cliDatabase.csproj.GenerateResource.cache
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\obj\Debug\cliDatabase.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\obj\Debug\cliDatabase.csproj.CopyComplete
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\obj\Debug\cliDatabase.exe
+C:\Users\user\Downloads\car-shop-GiuliaFormenti-master\cliDatabase\obj\Debug\cliDatabase.pdb

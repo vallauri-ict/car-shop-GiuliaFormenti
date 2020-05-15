@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "nkNCSeXn5SLkv5x3c65YRz+5Qc+ot/9eRTFRNL9sDqHznCxNbEE48WvgbyzZsQxRT1PWDFXW1m6laZ9Abf7Ypg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Downloads\\car-shop-GiuliaFormenti-master\\VenditaVeicoliDLLProject\\VenditaVeicoliDLLProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.10.0\\documentformat.openxml.2.10.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
