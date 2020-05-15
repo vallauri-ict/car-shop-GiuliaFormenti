@@ -15,8 +15,21 @@ Presenta un menù con diverse voci:
 - **ELIMINARE UN ELEMENTO**
 - **ELIMINARE LA TABELLA**
 - **CLEAR CONSOLE**, che consente di pulire la console dai comandi eseguiti in precedenza lasciando solamente il menù
+ ```cs
+    private static void menu()
+        {
+            Console.WriteLine(" CAR SHOP - DB MANAGEMENT \n");
+            Console.WriteLine("1 - CREAZIONE TABELLA Cars");
+            Console.WriteLine("2 - AGGIUNGERE UN NUOVO ELEMENTO in Cars");
+            Console.WriteLine("3 - ELIMINARE UN ELEMENTO da Cars");
+            Console.WriteLine("4 - ELIMINARE LA TABELLA Cars");
+            Console.WriteLine("5 - CLEAR CONSOLE");
+            Console.WriteLine("\nX - FINE\n\n");
+        }
+    ```
 
 E' presente il sottoprogramma **DropTable(string name)**, per la rimozione di una tabella, qui presente in modo da non poter essere direttamente richiamato dall'utente.
+private static void DropTable(string name)
 
 Intoltre vi è il sottoprogramma **setParameters()** che permette di inserire i vari parametri aggiungendo valori di default in presenza di errori.
 
