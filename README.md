@@ -7,6 +7,7 @@ Contiene la gestione del listino di auto e moto e sono qiundi presenti i sottopr
 - salvataggio dei veicoli presenti
 - visualizzazione dei veicoli presenti
 - creazione del volantino
+- gestione del database
 
 E' stata inoltre implementata una iniziale gestione del listino usando Access.
 
