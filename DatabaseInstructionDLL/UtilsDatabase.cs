@@ -10,7 +10,7 @@ namespace DatabaseInstructionDLL
     public class UtilsDatabase
     {
         public static string connStr;
-        public static bool ok = true;
+        public static bool first = true;
 
         public UtilsDatabase(string con)
         {
@@ -32,7 +32,7 @@ namespace DatabaseInstructionDLL
                     //Creo la tabella
                     try
                     {
-                        ok = true;
+                        first = false;
                         cmd.CommandText = $@"CREATE TABLE {name}(
                                             id INT identity(1,1) NOT NULL PRIMARY KEY,
                                             type VARCHAR(255) NOT NULL, marca VARCHAR(255) NOT NULL,
@@ -48,10 +48,10 @@ namespace DatabaseInstructionDLL
                         //        colore VARCHAR(255), cilindrata INT, potenzaKw INT,
                         //        immatricolazione DATE, usato VARCHAR(255), kmZero VARCHAR(255),
                         //        kmPercorsi INT, prezzo MONEY,";
+                        Console.WriteLine($"Tabella {name} creata correttamente");
                     }
                     catch (OleDbException exc)
                     {
-                        ok = false;
                         Console.WriteLine("\n\n" + exc.Message);
                         System.Threading.Thread.Sleep(3000);
                         return;
@@ -259,7 +259,7 @@ namespace DatabaseInstructionDLL
                 OleDbConnection con = new OleDbConnection(connStr);
                 using (con)
                 {
-                    
+                    first = true;
                     con.Open();
                     OleDbCommand cmd = new OleDbCommand();
                     cmd.Connection = con;

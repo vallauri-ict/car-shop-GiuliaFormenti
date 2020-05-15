@@ -19,6 +19,7 @@ namespace WindowsFormsAppProject
         private static string DbPath = Path.Combine(resourcesDirectoryPath, "CarShop.accdb");//Percorso del file contenente il database.
         private static string connStr = $"Provider=Microsoft.Ace.Oledb.12.0; Data Source={DbPath};";//Stringa di connessione completa al database access.
         SerializableBindingList<Veicolo> bindingListVeicoli;
+        private static string file = "C:\\Users\\Giulia\\Desktop\\info\\ultimo\\VenditaVeicoli\\resources\\table.txt";
 
         public FormMain()
         {
@@ -29,6 +30,7 @@ namespace WindowsFormsAppProject
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            leggiFile();
             caricaDatiDiTest();
         }
 
@@ -41,18 +43,36 @@ namespace WindowsFormsAppProject
             //UtilsDatabase.CreateTable("Moto");
             //UtilsDatabase.CreateTableCars("Moto");
             //UtilsDatabase.CreateTableCars("Auto");
-            UtilsDatabase.CreateTableCars("cars");
+            if (UtilsDatabase.first)
+            {
+                UtilsDatabase.CreateTableCars("cars");
+                UtilsDatabase.AddNewCar("Moto", "Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, 12000, "Quintino", 0);
+                UtilsDatabase.AddNewCar("Auto", "Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 32500, "/", 8);
+            }
             Moto m = new Moto();
             bindingListVeicoli.Add(m);
             m = new Moto("Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, "Quintino");
             bindingListVeicoli.Add(m);
-            UtilsDatabase.AddNewCar("Moto", "Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, 12000, "Quintino", 0);
             //UtilsDatabase.AddNewItem("Moto", "Honda", "Dominator", "Nero", 1000, 120, DateTime.Now, false, false, 0, 12000, 0, "Quintino");
             Auto a = new Auto("Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 8);
             bindingListVeicoli.Add(a);
-            UtilsDatabase.AddNewCar("Auto", "Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 32500, "", 8);
             //UtilsDatabase.AddNewItem("Auto", "Jeep", "Compass", "Blu", 1000, 32, DateTime.Now, false, false, 0, 32500, /*"",*/ 8, "");
+        }
 
+        private void leggiFile()
+        {
+            using (StreamReader sr = new StreamReader(file))
+            {
+                String line = sr.ReadToEnd();
+                if (line == "true")
+                {
+                    UtilsDatabase.first = true;
+                }
+                else
+                {
+                    UtilsDatabase.first = false;
+                }
+            }
         }
 
         private void nuovoToolStripButton_Click(object sender, EventArgs e)
@@ -128,6 +148,14 @@ namespace WindowsFormsAppProject
             string homepagePath = @".\www\index.html";
             Utils.CreateHtml(bindingListVeicoli, homepagePath);
             System.Diagnostics.Process.Start(homepagePath);
+        }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            using (StreamWriter sw = new StreamWriter("table.txt"))
+            {
+                sw.WriteLine(UtilsDatabase.first.ToString());
+            }
         }
     }
 }

@@ -12,23 +12,36 @@ namespace ConsoleAppProject
         private static string connStr = $"Provider=Microsoft.Ace.Oledb.12.0; Data Source={DbPath};";//Stringa di connessione completa al database access.
         private static string veicolo;
         private static string marca;
-        public static string modello;
-        public static string colore;
-        public static int cilindrata;
-        public static double potenza;
-        public static DateTime immatricolazione;
-        public static bool usata;
-        public static bool kmZero;
-        public static int kmPercorsi;
-        public static string marcaSella;
-        public static int numAirbag;
+        private static string modello;
+        private static string colore;
+        private static int cilindrata;
+        private static double potenza;
+        private static DateTime immatricolazione;
+        private static bool usata;
+        private static bool kmZero;
+        private static int kmPercorsi;
+        private static string marcaSella;
+        private static int numAirbag;
         private static int prezzo;
         private static string tab;
+        private static string file = "C:\\Users\\Giulia\\Desktop\\info\\ultimo\\VenditaVeicoli\\resources\\table.txt";
 
         static void Main(string[] args)
         {
             UtilsDatabase u = new UtilsDatabase(connStr);
             //u.CreateTableCars();
+            using (StreamReader sr = new StreamReader(file))
+            {
+                String line = sr.ReadToEnd();
+                if (line == "true")
+                {
+                    UtilsDatabase.first = true;
+                }
+                else
+                {
+                    UtilsDatabase.first = false;
+                }
+            }
 
             Console.WriteLine("*** SALONE VENDITA VEICOLI NUOVI E USATI ***");
             //Moto m = new Moto();
@@ -47,7 +60,14 @@ namespace ConsoleAppProject
                 switch (scelta)
                 {
                     case '1':
-                        UtilsDatabase.CreateTableCars("cars");
+                        if (UtilsDatabase.first)
+                        {
+                            UtilsDatabase.CreateTableCars("cars");
+                        }
+                        else
+                        {
+                            Console.WriteLine("\nLa tabella cars è già esistente\n\n\n");
+                        }
                         break;
                     case '2':
                         setParameters();
@@ -58,7 +78,6 @@ namespace ConsoleAppProject
                         else
                         {
                             UtilsDatabase.AddNewCar(veicolo, marca, modello, colore, cilindrata, potenza, immatricolazione, usata, kmZero, kmPercorsi, prezzo, "", numAirbag);
-
                         }
                         break;
                     case '3':
@@ -78,29 +97,46 @@ namespace ConsoleAppProject
                     case '4':
                         UtilsDatabase.DropTable("cars");
                         break;
+                    case '5':
+                        Console.Clear();
+                        break;
                     default:
                         break;
                 }
             } while (scelta != 'X' && scelta != 'x');
+            using (StreamWriter sw = new StreamWriter(file))
+            {
+                sw.WriteLine(UtilsDatabase.first.ToString());
+            }
         }
 
         private static void menu()
         {
-            Console.Clear();
             Console.WriteLine(" CAR SHOP - DB MANAGEMENT \n");
             Console.WriteLine("1 - CREAZIONE TABELLA Cars");
             Console.WriteLine("2 - AGGIUNGERE UN NUOVO ELEMENTO in Cars");
             Console.WriteLine("3 - ELIMINARE UN ELEMENTO da Cars");
             Console.WriteLine("4 - ELIMINARE LA TABELLA Cars");
+            Console.WriteLine("5 - CLEAR CONSOLE");
             Console.WriteLine("\nX - FINE\n\n");
         }
 
         public static void setParameters()
         {
+            if (UtilsDatabase.first)
+            {
+                Console.WriteLine("Non è stata ancora creata la tabella");
+                UtilsDatabase.CreateTableCars("cars");
+            }
             object aus;
 
             Console.Write("Auto o Moto? ");
-            marca = Console.ReadLine();
+            veicolo = Console.ReadLine();
+            if (!((veicolo == "Moto") || (veicolo == "Auto")))
+            {
+                veicolo = "Moto";
+                Console.WriteLine("Input invalido: impostato come valore di default " + veicolo);
+            }
 
             Console.Write("Marca: ");
             marca = Console.ReadLine();
@@ -139,29 +175,45 @@ namespace ConsoleAppProject
             immatricolazione = Convert.ToDateTime(Console.ReadLine());
 
             Console.Write("E' usata? ");
-            bool flag;
-            if (Boolean.TryParse(Console.ReadLine(), out flag))
+            aus = Console.ReadLine();
+            if (aus.ToString().ToUpper() == "SI")
             {
-                usata = Convert.ToBoolean(Console.ReadLine());
+                usata = true;
             }
-                
+            else if (aus.ToString().ToUpper() == "NO")
+            {
+                usata = false;
+            }
             else
             {
                 usata = false;
                 Console.WriteLine("Input non valido: impostato il valore di default di " + usata);
             }
+            //bool flag;
+            //if (Boolean.TryParse(Console.ReadLine(), out flag))
+            //{
+            //    usata = Convert.ToBoolean(Console.ReadLine());
+            //}
+
+            //else
+            //{
+            //    usata = false;
+            //    Console.WriteLine("Input non valido: impostato il valore di default di " + usata);
+            //}
 
             Console.Write("E' KM 0? ");
-            bool flag2;
-            
-            if (Boolean.TryParse(Console.ReadLine(), out flag2))
-            {
-                kmZero = Convert.ToBoolean(Console.ReadLine());
-            }
-
-            else
+            aus = Console.ReadLine();
+            if (aus.ToString().ToUpper() == "SI")
             {
                 kmZero = true;
+            }
+            else if (aus.ToString().ToUpper() == "NO")
+            {
+                kmZero = false;
+            }
+            else
+            {
+                kmZero = false;
                 Console.WriteLine("Input non valido: impostato il valore di default di " + kmZero);
             }
 
@@ -169,7 +221,7 @@ namespace ConsoleAppProject
             aus = Console.ReadLine();
             if (Double.IsNaN(Convert.ToDouble(aus)))
             {
-                kmPercorsi = 1000;
+                kmPercorsi = 0;
                 Console.WriteLine("Input non valido: impostato il valore di default di " + kmPercorsi);
             }
             else
@@ -193,6 +245,7 @@ namespace ConsoleAppProject
             {
                 Console.Write("Marca della sella: ");
                 marcaSella = Console.ReadLine();
+                numAirbag = 0;
             }
             else
             {
@@ -200,13 +253,14 @@ namespace ConsoleAppProject
                 aus = Console.ReadLine();
                 if (Double.IsNaN(Convert.ToDouble(aus)))
                 {
-                    numAirbag = 1000;
+                    numAirbag = 4;
                     Console.WriteLine("Input non valido: impostato il valore di default di " + numAirbag);
                 }
                 else
                 {
                     numAirbag = Convert.ToInt32(aus);
                 }
+                marcaSella = "/";
             }
         }
     }
