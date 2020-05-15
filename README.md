@@ -15,7 +15,7 @@ Presenta un menù con diverse voci:
 - **ELIMINARE UN ELEMENTO**
 - **ELIMINARE LA TABELLA**
 - **CLEAR CONSOLE**, che consente di pulire la console dai comandi eseguiti in precedenza lasciando solamente il menù
- ```cs
+ ```csharp
     private static void menu()
         {
             Console.WriteLine(" CAR SHOP - DB MANAGEMENT \n");
